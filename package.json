@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "![image](https://user-images.githubusercontent.com/40164098/105955620-966fb500-609c-11eb-9088-ca17e8dfc884.png)",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "particles.js": "^2.0.0",
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagar797/Portfolio.git"
+  },
+  "author": "Sagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagar797/Portfolio/issues"
+  },
+  "homepage": "https://github.com/sagar797/Portfolio#readme"
+}

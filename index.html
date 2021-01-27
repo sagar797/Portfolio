@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   <!-- Import style.css from root directory -->
   <link rel="stylesheet" href="./styles.css" />
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -250,19 +250,29 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/68732ce216.js" crossorigin="anonymous"></script>
 
-  <!-- jquery cdn -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <!-- Import Particles.js and app.js files -->
-  <script src="./node_modules/particles.js/particles.js"></script>
-  <script src="./node_modules/particles.js/demo/js/app.js"></script>
+  <script src="particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+  if ($(".text-slider").length == 1) {
 
+var typed_strings = $(".text-slider-items").text();
+// console.log(typed_strings);
+
+var typed = new Typed(".text-slider", {
+    strings: typed_strings.split(", "),
+    typeSpeed: 50,
+    loop: true,
+    backDelay: 900,
+    backSpeed: 30,
+});
+}
+</script>
   <!-- stats.js -->
-  <script src="./node_modules/particles.js/demo/js/lib/stats.js"></script>
 
   <!-- typed animation name script file -->
-  <script src="./node_modules/typed.js/lib/typed.min.js"></script>
-  <script src="./js/text.js"></script>
+  
 </body>
 
 </html>
